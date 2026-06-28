@@ -5,16 +5,19 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+The game setup looked fine when I first ran it.
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+  The hints were wrong, for instance, the target number was 83, and I typed in 50, and it otld me to go lower. And then when i typed in 40 ,it told me to go lower once more. Then on another try, the number was 53, I typed in 70 and it told me to go higher. 
 
+When you click new game, it doesn't load a  new game. It still shows whether or not you've won or lost, and it shows the history of the past guesses you had. 
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
+| | | | |   
 | | | | |
 | | | | |
 
