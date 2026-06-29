@@ -35,6 +35,7 @@ def check_guess(guess, secret):
 
     outcome examples: "Win", "Too High", "Too Low"
     """
+    #FIX: All that I had to do was change the if statements. If the guess was too high, then it should return "too high go lower." If the guess was too low, then it should return "too low, go higher"
     if guess == secret:
         return "Win", "🎉 Correct!"
 

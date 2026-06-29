@@ -26,18 +26,23 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+This is a guessing game so the purpose is for the user to guess the hidden number and enter it into the app. Based on how the hints provided by the game, the user will either increase the number, or decrease it to reach the right value of the number. You get a limited number of tries (7), if you guess the number under the amount of tries then you win, but points will be deducted with every try. 
+
 - [ ] Detail which bugs you found.
+1. The hints were wrong, and it would tell you to guess a higher number when you really should've guess a lower number. 2. The game wouldn't refresh when the button was clicked on, so you just had the same amount of attempts. 
 - [ ] Explain what fixes you applied.
+The game wasn't resetting so the Ai suggested to rest the who hamebord. The status is changed to playing so that way when streamlit rereads the script, it doesn't stop at playing and will actually refresh. For the hints, the hints were backwards, so it was a simple fix of changing the if statements. The secret also turned into a string on even attempts, even though our guesses re ints. Int>Str can result in TypeError, so the AI fixed this through changing how the checkguess recivevd the number. It made to that check_guess will always receive an int. 
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User will enter a number of 60
+2. The agme will return "Too high! Go lower."
+3.The user enters a guess of 52.
+4. The score updates after a guess, 
+5. The previous guess will be listed in the attempts history
+6. The game ends after the correct guess or after the user has used all of the attempts. 
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 

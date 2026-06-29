@@ -33,6 +33,7 @@ low, high = get_range_for_difficulty(difficulty)
 st.sidebar.caption(f"Range: {low} to {high}")
 st.sidebar.caption(f"Attempts allowed: {attempt_limit}")
 
+#FIX: The game status wasn't being refreshed, so we changed it through 
 if "secret" not in st.session_state:
     st.session_state.secret = random.randint(low, high)
 
@@ -103,7 +104,7 @@ if submit:
         st.error(err)
     else:
         st.session_state.history.append(guess_int)
-
+#FIX: Check guss was changed to a recieve an int, instead of a string. 
         outcome, message = check_guess(guess_int, st.session_state.secret)
 
         if show_hint:
