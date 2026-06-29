@@ -47,6 +47,17 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # Paste your pytest output here, e.g.:
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
+caitlynbennett@Estelles-MacBook-Pro a110module2 % PYTHONPATH=. pytest tests/test_game_logic.py
+======================================= test session starts =======================================
+platform darwin -- Python 3.13.5, pytest-8.3.4, pluggy-1.5.0
+rootdir: /Users/caitlynbennett/ai_engineering1101/module2/a110module2
+plugins: anyio-4.7.0
+collected 4 items                                                                                 
+
+tests/test_game_logic.py ....                                                               [100%]
+
+======================================== 4 passed in 0.02s ========================================
+caitlynbennett@Estelles-MacBook-Pro a110module2 % 
 ```
 
 ## 🚀 Stretch Features
